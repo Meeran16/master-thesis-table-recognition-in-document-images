@@ -1,0 +1,21 @@
+=== Nemotron v2 validation prediction export ===
+Exp: /home/meeran/YOLOX/exps/nemotron_finetune_100ann.py
+Checkpoint: /home/meeran/YOLOX/YOLOX_outputs/nemotron_finetune_100ann/best_ckpt.pth
+Images: /home/meeran/thesis_data/dataset_100ann_5class/val/images
+Output: /home/meeran/thesis_data/final_overlay_predictions/nemotron_v2/labels
+Conf: 0.25
+NMS: 0.65
+Device: cuda
+Images found: 26
+[5/26] 1de7d54e___table_0.png: 18 boxes
+[10/26] 38260563___table_3.png: 24 boxes
+[15/26] 4631f8d1___table_1.png: 8 boxes
+[20/26] b4980366___table_0.png: 23 boxes
+[25/26] f2b794ad___table_0.png: 44 boxes
+[26/26] f4e6f3aa___table_0.png: 23 boxes
+
+Done.
+Images: 26
+Total boxes: 637
+Labels saved to: /home/meeran/thesis_data/final_overlay_predictions/nemotron_v2/labels
+Empty prediction files: 0

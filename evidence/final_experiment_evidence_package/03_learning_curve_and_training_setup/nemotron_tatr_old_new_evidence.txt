@@ -1,0 +1,1837 @@
+============================================================
+NEMOTRON AND TATR OLD VS NEW METRIC EVIDENCE
+============================================================
+Mon Jul 13 11:14:45 PM CEST 2026
+
+=== New Nemotron v2 final eval ===
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.718
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.911
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.809
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.727
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.175
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.680
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.791
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.794
+per class AP:
+| class   | AP     | class   | AP     | class   | AP     |
+| cell    | 73.811 | row     | 71.415 | column  | 70.235 |
+per class AR:
+| cell    | 81.131 | row     | 77.540 | column  | 78.667 |
+
+=== Old Nemotron logs available ===
+/home/meeran/thesis_data/all183_preannotations/all183_crop_mapping.json
+/home/meeran/thesis_data/all183_preannotations/nemotron_finetuned_all183_with_table_ls_import.json
+/home/meeran/thesis_data/all183_preannotations/nemotron_finetuned/predictions.json
+/home/meeran/thesis_data/all183_preannotations/selected_all183_tasks.json
+/home/meeran/thesis_data/all183_preannotations/yolov8_finetuned_all183_with_table_ls_import.json
+/home/meeran/thesis_data/all183_preannotations/yolov8_finetuned/predictions.json
+/home/meeran/thesis_data/cropped_to_ls_mapping.json
+/home/meeran/thesis_data/cropped_to_ls_mapping_resolved.json
+/home/meeran/thesis_data/dataset_100ann_3class/manifest.json
+/home/meeran/thesis_data/dataset_100ann_3class_yolox/annotations/all_100ann_nemotron.json
+/home/meeran/thesis_data/dataset_100ann_3class_yolox/annotations/train_nemotron.json
+/home/meeran/thesis_data/dataset_100ann_3class_yolox/annotations/val_nemotron.json
+/home/meeran/thesis_data/dataset_100ann_5class/manifest.json
+/home/meeran/thesis_data/dataset_3class/annotations/all_51_nemotron.json
+/home/meeran/thesis_data/dataset_3class/annotations/train_nemotron.json
+/home/meeran/thesis_data/dataset_3class/annotations/train_tatr.json
+/home/meeran/thesis_data/dataset_3class/annotations/val_nemotron.json
+/home/meeran/thesis_data/dataset_3class/annotations/val_tatr.json
+/home/meeran/thesis_data/dataset_3class/train.json
+/home/meeran/thesis_data/dataset_3class/train_nemotron.json
+/home/meeran/thesis_data/dataset_3class/val.json
+/home/meeran/thesis_data/dataset_3class/val_nemotron.json
+/home/meeran/thesis_data/filtered_annotations.json
+/home/meeran/thesis_data/ls_export_100_annotations.json
+/home/meeran/thesis_data/ls_export_191.json
+/home/meeran/thesis_data/ls_predictions/nemotron_finetuned_ls_api.json
+/home/meeran/thesis_data/ls_predictions/nemotron_finetuned_ls_import.json
+/home/meeran/thesis_data/ls_predictions/nemotron_pretrained_ls_api.json
+/home/meeran/thesis_data/ls_predictions/nemotron_pretrained_ls_import.json
+/home/meeran/thesis_data/ls_predictions/tabletransformer_pretrained_ls_api.json
+/home/meeran/thesis_data/ls_predictions/tabletransformer_pretrained_ls_import.json
+/home/meeran/thesis_data/ls_predictions/yolov10_finetuned_ls_api.json
+/home/meeran/thesis_data/ls_predictions/yolov10_finetuned_ls_import.json
+/home/meeran/thesis_data/ls_predictions/yolov8_finetuned_ls_api.json
+/home/meeran/thesis_data/ls_predictions/yolov8_finetuned_ls_import.json
+/home/meeran/thesis_data/ls_yolo_100_annotations_with_images/notes.json
+/home/meeran/thesis_data/ls_yolo_images_191/notes.json
+/home/meeran/thesis_data/nemotron_baseline/predictions.json
+/home/meeran/thesis_data/nemotron_eval_100ann_final.log
+/home/meeran/thesis_data/nemotron_finetune_100ann.log
+/home/meeran/thesis_data/nemotron_finetuned_f1_results.log
+/home/meeran/thesis_data/nemotron_finetuned_inference.log
+/home/meeran/thesis_data/nemotron_finetuned/predictions.json
+/home/meeran/thesis_data/nemotron_finetune_eval_all51.log
+/home/meeran/thesis_data/nemotron_finetune.log
+/home/meeran/thesis_data/nemotron_finetune_v2.log
+/home/meeran/thesis_data/nemotron_finetune_v3.log
+/home/meeran/thesis_data/nemotron_finetune_v4.log
+/home/meeran/thesis_data/nemotron_finetune_v5.log
+/home/meeran/thesis_data/nemotron_pretrained_f1_results.log
+/home/meeran/thesis_data/nemotron_train.log
+/home/meeran/thesis_data/nemotron_v2_val_predictions.log
+/home/meeran/thesis_data/new49_preannotations/nemotron_finetuned_49_ls_import.json
+/home/meeran/thesis_data/new49_preannotations/nemotron_finetuned/predictions.json
+/home/meeran/thesis_data/new49_preannotations/new49_crop_mapping.json
+/home/meeran/thesis_data/new49_preannotations/selected_49_tasks.json
+/home/meeran/thesis_data/professor_update_evidence/nemotron_eval_100ann_final.log
+/home/meeran/thesis_data/professor_update_evidence/nemotron_v2_val_predictions.log
+/home/meeran/thesis_data/professor_update_evidence/tatr_100ann_threshold_sweep_eval.log
+/home/meeran/thesis_data/tatr_100ann_threshold_sweep_eval.log
+/home/meeran/thesis_data/tatr_finetune_100ann/annotations/train.json
+/home/meeran/thesis_data/tatr_finetune_100ann/annotations/val.json
+/home/meeran/thesis_data/tatr_finetune_100ann.log
+/home/meeran/thesis_data/tatr_finetune/annotations/train.json
+/home/meeran/thesis_data/tatr_finetune/annotations/val.json
+/home/meeran/thesis_data/tatr_finetuned_100ann/checkpoint-1056/config.json
+/home/meeran/thesis_data/tatr_finetuned_100ann/checkpoint-1056/preprocessor_config.json
+/home/meeran/thesis_data/tatr_finetuned_100ann/checkpoint-1056/trainer_state.json
+/home/meeran/thesis_data/tatr_finetuned_100ann/checkpoint-1078/config.json
+/home/meeran/thesis_data/tatr_finetuned_100ann/checkpoint-1078/preprocessor_config.json
+/home/meeran/thesis_data/tatr_finetuned_100ann/checkpoint-1078/trainer_state.json
+/home/meeran/thesis_data/tatr_finetuned_100ann/checkpoint-1100/config.json
+/home/meeran/thesis_data/tatr_finetuned_100ann/checkpoint-1100/preprocessor_config.json
+/home/meeran/thesis_data/tatr_finetuned_100ann/checkpoint-1100/trainer_state.json
+/home/meeran/thesis_data/tatr_finetuned_100ann/final/config.json
+/home/meeran/thesis_data/tatr_finetuned_100ann/final/preprocessor_config.json
+/home/meeran/thesis_data/tatr_finetuned_100ann_predictions/threshold_sweep_metrics.json
+/home/meeran/thesis_data/tatr_finetuned/checkpoint-576/config.json
+/home/meeran/thesis_data/tatr_finetuned/checkpoint-576/preprocessor_config.json
+/home/meeran/thesis_data/tatr_finetuned/checkpoint-576/trainer_state.json
+/home/meeran/thesis_data/tatr_finetuned/checkpoint-588/config.json
+/home/meeran/thesis_data/tatr_finetuned/checkpoint-588/preprocessor_config.json
+/home/meeran/thesis_data/tatr_finetuned/checkpoint-588/trainer_state.json
+/home/meeran/thesis_data/tatr_finetuned/checkpoint-600/config.json
+/home/meeran/thesis_data/tatr_finetuned/checkpoint-600/preprocessor_config.json
+/home/meeran/thesis_data/tatr_finetuned/checkpoint-600/trainer_state.json
+/home/meeran/thesis_data/tatr_finetuned_f1_results.log
+/home/meeran/thesis_data/tatr_finetuned_f1_thr_0p05.log
+/home/meeran/thesis_data/tatr_finetuned_f1_thr_0p15.log
+/home/meeran/thesis_data/tatr_finetuned_f1_thr_0p1.log
+/home/meeran/thesis_data/tatr_finetuned_f1_thr_0p25.log
+/home/meeran/thesis_data/tatr_finetuned_f1_thr_0p2.log
+/home/meeran/thesis_data/tatr_finetuned_f1_thr_0p3.log
+/home/meeran/thesis_data/tatr_finetuned_f1_thr_0p4.log
+/home/meeran/thesis_data/tatr_finetuned_f1_thr_0p5.log
+/home/meeran/thesis_data/tatr_finetuned/final/config.json
+/home/meeran/thesis_data/tatr_finetuned/final/preprocessor_config.json
+/home/meeran/thesis_data/tatr_finetuned_inference.log
+/home/meeran/thesis_data/tatr_finetuned_inference_thr_0p05.log
+/home/meeran/thesis_data/tatr_finetuned_inference_thr_0p15.log
+/home/meeran/thesis_data/tatr_finetuned_inference_thr_0p1.log
+/home/meeran/thesis_data/tatr_finetuned_inference_thr_0p25.log
+/home/meeran/thesis_data/tatr_finetuned_inference_thr_0p2.log
+/home/meeran/thesis_data/tatr_finetuned_inference_thr_0p3.log
+/home/meeran/thesis_data/tatr_finetuned_inference_thr_0p4.log
+/home/meeran/thesis_data/tatr_finetuned_inference_thr_0p5.log
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/predictions.json
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/predictions.json
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/predictions.json
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/predictions.json
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/predictions.json
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/predictions.json
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/predictions.json
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/predictions.json
+/home/meeran/thesis_data/tatr_finetune.log
+/home/meeran/thesis_data/tatr_pretrained_f1_results.log
+/home/meeran/thesis_data/tatr_threshold_sweep_run.log
+/home/meeran/thesis_data/yolov10_runs_100ann/val_v1_old_on_100ann/predictions.json
+/home/meeran/thesis_data/yolov10_runs_100ann/val_v2_new_on_100ann/predictions.json
+/home/meeran/thesis_data/yolov8_runs_100ann/val_v1_old_on_100ann/predictions.json
+/home/meeran/thesis_data/yolov8_runs_100ann/val_v2_new_on_100ann/predictions.json
+/home/meeran/YOLOX/YOLOX_outputs/nemotron_finetune/train_log.txt
+
+=== Old Nemotron possible metric lines ===
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+/home/meeran/thesis_data/nemotron_baseline/predictions.json:      "label": "Cell",
+
+=== New TATR threshold sweep ===
+{
+  "0.05": {
+    "common_images": 26,
+    "classes": {
+      "0": {
+        "name": "Row",
+        "gt": 112,
+        "pred": 950,
+        "tp": 62,
+        "fp": 888,
+        "fn": 50,
+        "precision": 0.06526315789473684,
+        "recall": 0.5535714285714286,
+        "f1": 0.11676082862523542
+      },
+      "1": {
+        "name": "Column",
+        "gt": 75,
+        "pred": 450,
+        "tp": 62,
+        "fp": 388,
+        "fn": 13,
+        "precision": 0.13777777777777778,
+        "recall": 0.8266666666666667,
+        "f1": 0.2361904761904762
+      },
+      "2": {
+        "name": "Cell",
+        "gt": 268,
+        "pred": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 268,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "3": {
+        "name": "Header-Row",
+        "gt": 14,
+        "pred": 23,
+        "tp": 12,
+        "fp": 11,
+        "fn": 2,
+        "precision": 0.5217391304347826,
+        "recall": 0.8571428571428571,
+        "f1": 0.6486486486486486
+      },
+      "4": {
+        "name": "Spanning-Cell",
+        "gt": 6,
+        "pred": 17,
+        "tp": 0,
+        "fp": 17,
+        "fn": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "overall": {
+      "gt": 475,
+      "pred": 1440,
+      "tp": 136,
+      "fp": 1304,
+      "fn": 339,
+      "precision": 0.09444444444444444,
+      "recall": 0.2863157894736842,
+      "f1": 0.14203655352480418
+    },
+    "supported": {
+      "gt": 207,
+      "pred": 1440,
+      "tp": 136,
+      "fp": 1304,
+      "fn": 71,
+      "precision": 0.09444444444444444,
+      "recall": 0.6570048309178744,
+      "f1": 0.16514875531268974
+    },
+    "avg_matched_iou": 0.7638138590834905,
+    "matched_pairs": 136,
+    "threshold": 0.05,
+    "total_boxes": 1440,
+    "class_counts": {
+      "Row": 950,
+      "Column": 450,
+      "Spanning-Cell": 17,
+      "Header-Row": 23
+    },
+    "pred_dir": "/home/meeran/thesis_data/tatr_finetuned_100ann_predictions/thr_0p05"
+  },
+  "0.1": {
+    "common_images": 26,
+    "classes": {
+      "0": {
+        "name": "Row",
+        "gt": 112,
+        "pred": 473,
+        "tp": 56,
+        "fp": 417,
+        "fn": 56,
+        "precision": 0.11839323467230443,
+        "recall": 0.5,
+        "f1": 0.19145299145299144
+      },
+      "1": {
+        "name": "Column",
+        "gt": 75,
+        "pred": 298,
+        "tp": 59,
+        "fp": 239,
+        "fn": 16,
+        "precision": 0.19798657718120805,
+        "recall": 0.7866666666666666,
+        "f1": 0.3163538873994638
+      },
+      "2": {
+        "name": "Cell",
+        "gt": 268,
+        "pred": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 268,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "3": {
+        "name": "Header-Row",
+        "gt": 14,
+        "pred": 13,
+        "tp": 12,
+        "fp": 1,
+        "fn": 2,
+        "precision": 0.9230769230769231,
+        "recall": 0.8571428571428571,
+        "f1": 0.888888888888889
+      },
+      "4": {
+        "name": "Spanning-Cell",
+        "gt": 6,
+        "pred": 6,
+        "tp": 0,
+        "fp": 6,
+        "fn": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "overall": {
+      "gt": 475,
+      "pred": 790,
+      "tp": 127,
+      "fp": 663,
+      "fn": 348,
+      "precision": 0.16075949367088607,
+      "recall": 0.2673684210526316,
+      "f1": 0.20079051383399213
+    },
+    "supported": {
+      "gt": 207,
+      "pred": 790,
+      "tp": 127,
+      "fp": 663,
+      "fn": 80,
+      "precision": 0.16075949367088607,
+      "recall": 0.6135265700483091,
+      "f1": 0.2547642928786359
+    },
+    "avg_matched_iou": 0.7640534402964033,
+    "matched_pairs": 127,
+    "threshold": 0.1,
+    "total_boxes": 790,
+    "class_counts": {
+      "Row": 473,
+      "Column": 298,
+      "Header-Row": 13,
+      "Spanning-Cell": 6
+    },
+    "pred_dir": "/home/meeran/thesis_data/tatr_finetuned_100ann_predictions/thr_0p1"
+  },
+  "0.15": {
+    "common_images": 26,
+    "classes": {
+      "0": {
+        "name": "Row",
+        "gt": 112,
+        "pred": 285,
+        "tp": 53,
+        "fp": 232,
+        "fn": 59,
+        "precision": 0.18596491228070175,
+        "recall": 0.4732142857142857,
+        "f1": 0.26700251889168763
+      },
+      "1": {
+        "name": "Column",
+        "gt": 75,
+        "pred": 229,
+        "tp": 59,
+        "fp": 170,
+        "fn": 16,
+        "precision": 0.2576419213973799,
+        "recall": 0.7866666666666666,
+        "f1": 0.3881578947368421
+      },
+      "2": {
+        "name": "Cell",
+        "gt": 268,
+        "pred": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 268,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "3": {
+        "name": "Header-Row",
+        "gt": 14,
+        "pred": 13,
+        "tp": 12,
+        "fp": 1,
+        "fn": 2,
+        "precision": 0.9230769230769231,
+        "recall": 0.8571428571428571,
+        "f1": 0.888888888888889
+      },
+      "4": {
+        "name": "Spanning-Cell",
+        "gt": 6,
+        "pred": 5,
+        "tp": 0,
+        "fp": 5,
+        "fn": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "overall": {
+      "gt": 475,
+      "pred": 532,
+      "tp": 124,
+      "fp": 408,
+      "fn": 351,
+      "precision": 0.23308270676691728,
+      "recall": 0.26105263157894737,
+      "f1": 0.24627606752730882
+    },
+    "supported": {
+      "gt": 207,
+      "pred": 532,
+      "tp": 124,
+      "fp": 408,
+      "fn": 83,
+      "precision": 0.23308270676691728,
+      "recall": 0.5990338164251208,
+      "f1": 0.33558863328822736
+    },
+    "avg_matched_iou": 0.7629933065854051,
+    "matched_pairs": 124,
+    "threshold": 0.15,
+    "total_boxes": 532,
+    "class_counts": {
+      "Row": 285,
+      "Column": 229,
+      "Header-Row": 13,
+      "Spanning-Cell": 5
+    },
+    "pred_dir": "/home/meeran/thesis_data/tatr_finetuned_100ann_predictions/thr_0p15"
+  },
+  "0.2": {
+    "common_images": 26,
+    "classes": {
+      "0": {
+        "name": "Row",
+        "gt": 112,
+        "pred": 214,
+        "tp": 47,
+        "fp": 167,
+        "fn": 65,
+        "precision": 0.21962616822429906,
+        "recall": 0.41964285714285715,
+        "f1": 0.28834355828220853
+      },
+      "1": {
+        "name": "Column",
+        "gt": 75,
+        "pred": 170,
+        "tp": 59,
+        "fp": 111,
+        "fn": 16,
+        "precision": 0.34705882352941175,
+        "recall": 0.7866666666666666,
+        "f1": 0.48163265306122444
+      },
+      "2": {
+        "name": "Cell",
+        "gt": 268,
+        "pred": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 268,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "3": {
+        "name": "Header-Row",
+        "gt": 14,
+        "pred": 13,
+        "tp": 12,
+        "fp": 1,
+        "fn": 2,
+        "precision": 0.9230769230769231,
+        "recall": 0.8571428571428571,
+        "f1": 0.888888888888889
+      },
+      "4": {
+        "name": "Spanning-Cell",
+        "gt": 6,
+        "pred": 2,
+        "tp": 0,
+        "fp": 2,
+        "fn": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "overall": {
+      "gt": 475,
+      "pred": 399,
+      "tp": 118,
+      "fp": 281,
+      "fn": 357,
+      "precision": 0.2957393483709273,
+      "recall": 0.24842105263157896,
+      "f1": 0.2700228832951945
+    },
+    "supported": {
+      "gt": 207,
+      "pred": 399,
+      "tp": 118,
+      "fp": 281,
+      "fn": 89,
+      "precision": 0.2957393483709273,
+      "recall": 0.5700483091787439,
+      "f1": 0.38943894389438943
+    },
+    "avg_matched_iou": 0.7697222907217434,
+    "matched_pairs": 118,
+    "threshold": 0.2,
+    "total_boxes": 399,
+    "class_counts": {
+      "Row": 214,
+      "Column": 170,
+      "Header-Row": 13,
+      "Spanning-Cell": 2
+    },
+    "pred_dir": "/home/meeran/thesis_data/tatr_finetuned_100ann_predictions/thr_0p2"
+  },
+  "0.25": {
+    "common_images": 26,
+    "classes": {
+      "0": {
+        "name": "Row",
+        "gt": 112,
+        "pred": 155,
+        "tp": 42,
+        "fp": 113,
+        "fn": 70,
+        "precision": 0.2709677419354839,
+        "recall": 0.375,
+        "f1": 0.3146067415730337
+      },
+      "1": {
+        "name": "Column",
+        "gt": 75,
+        "pred": 124,
+        "tp": 59,
+        "fp": 65,
+        "fn": 16,
+        "precision": 0.47580645161290325,
+        "recall": 0.7866666666666666,
+        "f1": 0.592964824120603
+      },
+      "2": {
+        "name": "Cell",
+        "gt": 268,
+        "pred": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 268,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "3": {
+        "name": "Header-Row",
+        "gt": 14,
+        "pred": 13,
+        "tp": 12,
+        "fp": 1,
+        "fn": 2,
+        "precision": 0.9230769230769231,
+        "recall": 0.8571428571428571,
+        "f1": 0.888888888888889
+      },
+      "4": {
+        "name": "Spanning-Cell",
+        "gt": 6,
+        "pred": 2,
+        "tp": 0,
+        "fp": 2,
+        "fn": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "overall": {
+      "gt": 475,
+      "pred": 294,
+      "tp": 113,
+      "fp": 181,
+      "fn": 362,
+      "precision": 0.3843537414965986,
+      "recall": 0.23789473684210527,
+      "f1": 0.293888166449935
+    },
+    "supported": {
+      "gt": 207,
+      "pred": 294,
+      "tp": 113,
+      "fp": 181,
+      "fn": 94,
+      "precision": 0.3843537414965986,
+      "recall": 0.5458937198067633,
+      "f1": 0.45109780439121755
+    },
+    "avg_matched_iou": 0.7691968751864766,
+    "matched_pairs": 113,
+    "threshold": 0.25,
+    "total_boxes": 294,
+    "class_counts": {
+      "Row": 155,
+      "Column": 124,
+      "Header-Row": 13,
+      "Spanning-Cell": 2
+    },
+    "pred_dir": "/home/meeran/thesis_data/tatr_finetuned_100ann_predictions/thr_0p25"
+  },
+  "0.3": {
+    "common_images": 26,
+    "classes": {
+      "0": {
+        "name": "Row",
+        "gt": 112,
+        "pred": 124,
+        "tp": 39,
+        "fp": 85,
+        "fn": 73,
+        "precision": 0.31451612903225806,
+        "recall": 0.3482142857142857,
+        "f1": 0.33050847457627114
+      },
+      "1": {
+        "name": "Column",
+        "gt": 75,
+        "pred": 110,
+        "tp": 59,
+        "fp": 51,
+        "fn": 16,
+        "precision": 0.5363636363636364,
+        "recall": 0.7866666666666666,
+        "f1": 0.6378378378378379
+      },
+      "2": {
+        "name": "Cell",
+        "gt": 268,
+        "pred": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 268,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "3": {
+        "name": "Header-Row",
+        "gt": 14,
+        "pred": 12,
+        "tp": 12,
+        "fp": 0,
+        "fn": 2,
+        "precision": 1.0,
+        "recall": 0.8571428571428571,
+        "f1": 0.923076923076923
+      },
+      "4": {
+        "name": "Spanning-Cell",
+        "gt": 6,
+        "pred": 2,
+        "tp": 0,
+        "fp": 2,
+        "fn": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "overall": {
+      "gt": 475,
+      "pred": 248,
+      "tp": 110,
+      "fp": 138,
+      "fn": 365,
+      "precision": 0.4435483870967742,
+      "recall": 0.23157894736842105,
+      "f1": 0.30428769017980634
+    },
+    "supported": {
+      "gt": 207,
+      "pred": 248,
+      "tp": 110,
+      "fp": 138,
+      "fn": 97,
+      "precision": 0.4435483870967742,
+      "recall": 0.5314009661835749,
+      "f1": 0.4835164835164836
+    },
+    "avg_matched_iou": 0.7725865198594196,
+    "matched_pairs": 110,
+    "threshold": 0.3,
+    "total_boxes": 248,
+    "class_counts": {
+      "Row": 124,
+      "Column": 110,
+      "Header-Row": 12,
+      "Spanning-Cell": 2
+    },
+    "pred_dir": "/home/meeran/thesis_data/tatr_finetuned_100ann_predictions/thr_0p3"
+  },
+  "0.4": {
+    "common_images": 26,
+    "classes": {
+      "0": {
+        "name": "Row",
+        "gt": 112,
+        "pred": 76,
+        "tp": 33,
+        "fp": 43,
+        "fn": 79,
+        "precision": 0.4342105263157895,
+        "recall": 0.29464285714285715,
+        "f1": 0.35106382978723405
+      },
+      "1": {
+        "name": "Column",
+        "gt": 75,
+        "pred": 98,
+        "tp": 59,
+        "fp": 39,
+        "fn": 16,
+        "precision": 0.6020408163265306,
+        "recall": 0.7866666666666666,
+        "f1": 0.6820809248554913
+      },
+      "2": {
+        "name": "Cell",
+        "gt": 268,
+        "pred": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 268,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "3": {
+        "name": "Header-Row",
+        "gt": 14,
+        "pred": 12,
+        "tp": 12,
+        "fp": 0,
+        "fn": 2,
+        "precision": 1.0,
+        "recall": 0.8571428571428571,
+        "f1": 0.923076923076923
+      },
+      "4": {
+        "name": "Spanning-Cell",
+        "gt": 6,
+        "pred": 1,
+        "tp": 0,
+        "fp": 1,
+        "fn": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "overall": {
+      "gt": 475,
+      "pred": 187,
+      "tp": 104,
+      "fp": 83,
+      "fn": 371,
+      "precision": 0.5561497326203209,
+      "recall": 0.21894736842105264,
+      "f1": 0.31419939577039274
+    },
+    "supported": {
+      "gt": 207,
+      "pred": 187,
+      "tp": 104,
+      "fp": 83,
+      "fn": 103,
+      "precision": 0.5561497326203209,
+      "recall": 0.5024154589371981,
+      "f1": 0.5279187817258884
+    },
+    "avg_matched_iou": 0.7747963706953799,
+    "matched_pairs": 104,
+    "threshold": 0.4,
+    "total_boxes": 187,
+    "class_counts": {
+      "Row": 76,
+      "Column": 98,
+      "Header-Row": 12,
+      "Spanning-Cell": 1
+    },
+    "pred_dir": "/home/meeran/thesis_data/tatr_finetuned_100ann_predictions/thr_0p4"
+  },
+  "0.5": {
+    "common_images": 26,
+    "classes": {
+      "0": {
+        "name": "Row",
+        "gt": 112,
+        "pred": 43,
+        "tp": 25,
+        "fp": 18,
+        "fn": 87,
+        "precision": 0.5813953488372093,
+        "recall": 0.22321428571428573,
+        "f1": 0.32258064516129037
+      },
+      "1": {
+        "name": "Column",
+        "gt": 75,
+        "pred": 82,
+        "tp": 55,
+        "fp": 27,
+        "fn": 20,
+        "precision": 0.6707317073170732,
+        "recall": 0.7333333333333333,
+        "f1": 0.7006369426751593
+      },
+      "2": {
+        "name": "Cell",
+        "gt": 268,
+        "pred": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 268,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "3": {
+        "name": "Header-Row",
+        "gt": 14,
+        "pred": 11,
+        "tp": 11,
+        "fp": 0,
+        "fn": 3,
+        "precision": 1.0,
+        "recall": 0.7857142857142857,
+        "f1": 0.88
+      },
+      "4": {
+        "name": "Spanning-Cell",
+        "gt": 6,
+        "pred": 1,
+        "tp": 0,
+        "fp": 1,
+        "fn": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "overall": {
+      "gt": 475,
+      "pred": 137,
+      "tp": 91,
+      "fp": 46,
+      "fn": 384,
+      "precision": 0.6642335766423357,
+      "recall": 0.19157894736842104,
+      "f1": 0.2973856209150327
+    },
+    "supported": {
+      "gt": 207,
+      "pred": 137,
+      "tp": 91,
+      "fp": 46,
+      "fn": 116,
+      "precision": 0.6642335766423357,
+      "recall": 0.4396135265700483,
+      "f1": 0.5290697674418605
+    },
+    "avg_matched_iou": 0.792491034606996,
+    "matched_pairs": 91,
+    "threshold": 0.5,
+    "total_boxes": 137,
+    "class_counts": {
+      "Row": 43,
+      "Column": 82,
+      "Header-Row": 11,
+      "Spanning-Cell": 1
+    },
+    "pred_dir": "/home/meeran/thesis_data/tatr_finetuned_100ann_predictions/thr_0p5"
+  }
+}
+=== New TATR log ===
+=== TATR 100-ann inference + threshold sweep ===
+Model id2label: {0: 'table', 1: 'table column', 2: 'table row', 3: 'table column header', 4: 'table projected row header', 5: 'table spanning cell'}
+TATR 100-ann threshold sweep
+IoU threshold: 0.5
+Threshold summary:
+   thr   boxes  overall_P  overall_R overall_F1  supported_P  supported_R supported_F1
+Best supported-class threshold: 0.5
+Best overall threshold: 0.4
+BEST SUPPORTED RESULT @ threshold 0.5
+Class counts: {'Row': 43, 'Column': 82, 'Header-Row': 11, 'Spanning-Cell': 1}
+Class              GT  Pred    TP    FP    FN    Prec     Rec      F1
+Row               112    43    25    18    87   0.581   0.223   0.323
+Column             75    82    55    27    20   0.671   0.733   0.701
+Cell              268     0     0     0   268   0.000   0.000   0.000
+Header-Row         14    11    11     0     3   1.000   0.786   0.880
+Spanning-Cell       6     1     0     1     6   0.000   0.000   0.000
+OVERALL           475   137    91    46   384   0.664   0.192   0.297
+SUPPORTED         207   137    91    46   116   0.664   0.440   0.529
+BEST OVERALL RESULT @ threshold 0.4
+Class counts: {'Row': 76, 'Column': 98, 'Header-Row': 12, 'Spanning-Cell': 1}
+Class              GT  Pred    TP    FP    FN    Prec     Rec      F1
+Row               112    76    33    43    79   0.434   0.295   0.351
+Column             75    98    59    39    16   0.602   0.787   0.682
+Cell              268     0     0     0   268   0.000   0.000   0.000
+Header-Row         14    12    12     0     2   1.000   0.857   0.923
+Spanning-Cell       6     1     0     1     6   0.000   0.000   0.000
+OVERALL           475   187   104    83   371   0.556   0.219   0.314
+SUPPORTED         207   187   104    83   103   0.556   0.502   0.528
+Saved JSON summary: /home/meeran/thesis_data/tatr_finetuned_100ann_predictions/threshold_sweep_metrics.json
+
+=== Old TATR metric files available ===
+/home/meeran/thesis_data/professor_update_evidence/tatr_100ann_threshold_sweep_eval.log
+/home/meeran/thesis_data/tatr_100ann_threshold_sweep_eval.log
+/home/meeran/thesis_data/tatr_finetuned_100ann_predictions/threshold_sweep_metrics.json
+/home/meeran/thesis_data/tatr_finetuned_predictions/03e74890__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/080f9182__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/096f5d74__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/0a2f3105__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/1342e261__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/146c9488__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/187496b7__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/21954c7f__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/21df4858__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/249b94da__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/2713131b__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/283a5d29__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/2b730939__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/30a06fd6__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/31a859ab__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/4396c02c__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/4631f8d1__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/47253de2__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/49a49bfb__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/4fba2e8b__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/539f9112__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/5833cab1__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/5b22dff8__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/5cf01935__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/6f751377__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/83a7e975__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/84941de2__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/85cd19df__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/90bc978d__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/91424a28__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/9ac42a84__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/9de2a1b9__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/a698d541__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/a74d6e59__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/ad0f2939__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/b19d490a__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/b4980366__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/b5c49a78__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/bdb33e53__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/bdd497d7__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/be857ca3__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/c0482a2b__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/c2cffa8a__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/c502a444__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/cf32915f__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/cf8fcdf3__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/dd4a1457__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/f3e0c816__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/f4e6f3aa__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/f9150968__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/fc07f9ab__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/03e74890__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/080f9182__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/096f5d74__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/0a2f3105__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/1342e261__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/146c9488__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/187496b7__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/21954c7f__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/21df4858__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/249b94da__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/2713131b__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/283a5d29__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/2b730939__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/30a06fd6__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/31a859ab__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/4396c02c__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/4631f8d1__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/47253de2__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/49a49bfb__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/4fba2e8b__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/539f9112__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/5833cab1__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/5b22dff8__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/5cf01935__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/6f751377__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/83a7e975__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/84941de2__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/85cd19df__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/90bc978d__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/91424a28__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/9ac42a84__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/9de2a1b9__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/a698d541__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/a74d6e59__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/ad0f2939__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/b19d490a__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/b4980366__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/b5c49a78__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/bdb33e53__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/bdd497d7__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/be857ca3__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/c0482a2b__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/c2cffa8a__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/c502a444__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/cf32915f__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/cf8fcdf3__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/dd4a1457__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/f3e0c816__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/f4e6f3aa__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/f9150968__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/fc07f9ab__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p05/predictions.json
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/03e74890__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/080f9182__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/096f5d74__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/0a2f3105__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/1342e261__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/146c9488__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/187496b7__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/21954c7f__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/21df4858__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/249b94da__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/2713131b__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/283a5d29__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/2b730939__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/30a06fd6__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/31a859ab__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/4396c02c__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/4631f8d1__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/47253de2__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/49a49bfb__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/4fba2e8b__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/03e74890__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/080f9182__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/096f5d74__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/0a2f3105__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/1342e261__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/146c9488__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/187496b7__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/21954c7f__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/21df4858__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/249b94da__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/2713131b__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/283a5d29__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/2b730939__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/30a06fd6__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/31a859ab__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/539f9112__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/4396c02c__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/4631f8d1__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/47253de2__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/49a49bfb__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/4fba2e8b__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/539f9112__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/5833cab1__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/5b22dff8__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/5cf01935__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/6f751377__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/5833cab1__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/83a7e975__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/84941de2__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/85cd19df__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/90bc978d__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/91424a28__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/9ac42a84__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/9de2a1b9__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/a698d541__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/a74d6e59__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/ad0f2939__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/b19d490a__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/5b22dff8__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/b4980366__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/b5c49a78__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/bdb33e53__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/bdd497d7__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/be857ca3__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/c0482a2b__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/c2cffa8a__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/c502a444__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/5cf01935__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/cf32915f__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/cf8fcdf3__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/dd4a1457__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/f3e0c816__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/f4e6f3aa__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/f9150968__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/fc07f9ab__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p15/predictions.json
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/6f751377__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/83a7e975__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/84941de2__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/85cd19df__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/90bc978d__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/91424a28__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/9ac42a84__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/9de2a1b9__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/a698d541__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/a74d6e59__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/ad0f2939__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/b19d490a__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/b4980366__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/b5c49a78__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/bdb33e53__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/bdd497d7__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/be857ca3__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/c0482a2b__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/c2cffa8a__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/c502a444__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/cf32915f__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/cf8fcdf3__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/dd4a1457__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/f3e0c816__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/f4e6f3aa__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/f9150968__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/fc07f9ab__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p1/predictions.json
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/03e74890__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/080f9182__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/096f5d74__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/0a2f3105__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/1342e261__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/146c9488__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/187496b7__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/21954c7f__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/21df4858__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/249b94da__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/2713131b__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/283a5d29__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/2b730939__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/30a06fd6__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/31a859ab__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/4396c02c__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/4631f8d1__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/47253de2__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/49a49bfb__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/4fba2e8b__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/03e74890__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/080f9182__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/096f5d74__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/0a2f3105__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/1342e261__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/146c9488__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/187496b7__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/21954c7f__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/21df4858__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/249b94da__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/2713131b__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/283a5d29__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/2b730939__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/30a06fd6__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/31a859ab__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/539f9112__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/4396c02c__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/4631f8d1__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/47253de2__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/49a49bfb__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/4fba2e8b__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/539f9112__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/5833cab1__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/5b22dff8__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/5cf01935__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/6f751377__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/5833cab1__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/83a7e975__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/84941de2__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/85cd19df__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/90bc978d__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/91424a28__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/9ac42a84__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/9de2a1b9__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/a698d541__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/a74d6e59__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/ad0f2939__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/b19d490a__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/5b22dff8__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/b4980366__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/b5c49a78__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/bdb33e53__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/bdd497d7__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/be857ca3__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/c0482a2b__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/c2cffa8a__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/c502a444__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/5cf01935__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/cf32915f__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/cf8fcdf3__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/dd4a1457__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/f3e0c816__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/f4e6f3aa__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/f9150968__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/fc07f9ab__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p25/predictions.json
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/6f751377__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/83a7e975__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/84941de2__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/85cd19df__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/90bc978d__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/91424a28__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/9ac42a84__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/9de2a1b9__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/a698d541__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/a74d6e59__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/ad0f2939__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/b19d490a__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/b4980366__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/b5c49a78__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/bdb33e53__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/bdd497d7__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/be857ca3__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/c0482a2b__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/c2cffa8a__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/c502a444__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/cf32915f__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/cf8fcdf3__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/dd4a1457__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/f3e0c816__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/f4e6f3aa__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/f9150968__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/fc07f9ab__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p2/predictions.json
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/03e74890__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/080f9182__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/096f5d74__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/0a2f3105__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/1342e261__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/146c9488__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/187496b7__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/21954c7f__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/21df4858__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/249b94da__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/2713131b__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/283a5d29__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/2b730939__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/30a06fd6__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/31a859ab__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/4396c02c__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/4631f8d1__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/47253de2__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/49a49bfb__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/4fba2e8b__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/539f9112__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/5833cab1__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/5b22dff8__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/5cf01935__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/6f751377__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/83a7e975__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/84941de2__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/85cd19df__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/90bc978d__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/91424a28__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/9ac42a84__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/9de2a1b9__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/a698d541__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/a74d6e59__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/ad0f2939__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/b19d490a__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/b4980366__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/b5c49a78__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/bdb33e53__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/bdd497d7__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/be857ca3__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/c0482a2b__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/c2cffa8a__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/c502a444__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/cf32915f__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/cf8fcdf3__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/dd4a1457__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/f3e0c816__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/f4e6f3aa__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/f9150968__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/fc07f9ab__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p3/predictions.json
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/03e74890__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/080f9182__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/096f5d74__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/0a2f3105__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/1342e261__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/146c9488__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/187496b7__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/21954c7f__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/21df4858__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/249b94da__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/2713131b__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/283a5d29__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/2b730939__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/30a06fd6__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/31a859ab__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/4396c02c__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/4631f8d1__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/47253de2__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/49a49bfb__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/4fba2e8b__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/539f9112__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/5833cab1__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/5b22dff8__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/5cf01935__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/6f751377__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/83a7e975__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/84941de2__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/85cd19df__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/90bc978d__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/91424a28__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/9ac42a84__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/9de2a1b9__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/a698d541__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/a74d6e59__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/ad0f2939__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/b19d490a__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/b4980366__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/b5c49a78__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/bdb33e53__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/bdd497d7__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/be857ca3__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/c0482a2b__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/c2cffa8a__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/c502a444__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/cf32915f__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/cf8fcdf3__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/dd4a1457__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/f3e0c816__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/f4e6f3aa__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/f9150968__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/fc07f9ab__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p4/predictions.json
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/03e74890__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/080f9182__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/096f5d74__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/0a2f3105__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/1342e261__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/146c9488__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/187496b7__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/21954c7f__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/21df4858__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/249b94da__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/2713131b__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/283a5d29__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/2b730939__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/30a06fd6__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/31a859ab__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/4396c02c__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/4631f8d1__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/47253de2__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/49a49bfb__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/4fba2e8b__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/539f9112__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/5833cab1__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/5b22dff8__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/5cf01935__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/6f751377__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/83a7e975__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/84941de2__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/85cd19df__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/90bc978d__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/91424a28__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/9ac42a84__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/9de2a1b9__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/a698d541__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/a74d6e59__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/ad0f2939__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/b19d490a__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/b4980366__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/b5c49a78__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/bdb33e53__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/bdd497d7__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/be857ca3__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/c0482a2b__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/c2cffa8a__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/c502a444__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/cf32915f__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/cf8fcdf3__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/dd4a1457__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/f3e0c816__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/f4e6f3aa__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/f9150968__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/fc07f9ab__.txt
+/home/meeran/thesis_data/tatr_finetuned_predictions_thr_0p5/predictions.json
+
+=== Old TATR possible metric lines ===
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Header-Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Spanning-Cell",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Header-Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Header-Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Spanning-Cell",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Header-Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Header-Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Header-Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Spanning-Cell",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Header-Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Spanning-Cell",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Spanning-Cell",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Spanning-Cell",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Header-Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Header-Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Header-Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Spanning-Cell",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Header-Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Header-Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Spanning-Cell",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Header-Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Row",
+/home/meeran/thesis_data/tatr_finetuned_predictions/predictions.json:      "label": "Column",

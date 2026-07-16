@@ -1,0 +1,195 @@
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for conv1.weight: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for bn1.weight: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for bn1.bias: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer1.0.conv1.weight: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer1.0.bn1.weight: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer1.0.bn1.bias: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer1.0.conv2.weight: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer1.0.bn2.weight: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer1.0.bn2.bias: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer1.1.conv1.weight: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer1.1.bn1.weight: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer1.1.bn1.bias: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer1.1.conv2.weight: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer1.1.bn2.weight: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer1.1.bn2.bias: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer2.0.conv1.weight: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer2.0.bn1.weight: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer2.0.bn1.bias: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer2.0.conv2.weight: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer2.0.bn2.weight: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer2.0.bn2.bias: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer2.0.downsample.0.weight: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer2.0.downsample.1.weight: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer2.0.downsample.1.bias: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer2.1.conv1.weight: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer2.1.bn1.weight: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer2.1.bn1.bias: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer2.1.conv2.weight: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer2.1.bn2.weight: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer2.1.bn2.bias: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer3.0.conv1.weight: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer3.0.bn1.weight: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer3.0.bn1.bias: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer3.0.conv2.weight: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer3.0.bn2.weight: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer3.0.bn2.bias: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer3.0.downsample.0.weight: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer3.0.downsample.1.weight: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer3.0.downsample.1.bias: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer3.1.conv1.weight: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer3.1.bn1.weight: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer3.1.bn1.bias: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer3.1.conv2.weight: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer3.1.bn2.weight: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer3.1.bn2.bias: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer4.0.conv1.weight: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer4.0.bn1.weight: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer4.0.bn1.bias: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer4.0.conv2.weight: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer4.0.bn2.weight: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer4.0.bn2.bias: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer4.0.downsample.0.weight: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer4.0.downsample.1.weight: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer4.0.downsample.1.bias: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer4.1.conv1.weight: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer4.1.bn1.weight: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer4.1.bn1.bias: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer4.1.conv2.weight: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer4.1.bn2.weight: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+/home/meeran/thesis_env/lib64/python3.9/site-packages/torch/nn/modules/module.py:2397: UserWarning: for layer4.1.bn2.bias: copying from a non-meta parameter in the checkpoint to a meta parameter in the current model, which is a no-op. (Did you mean to pass `assign=True` to assign items in the state dictionary to their corresponding key in the module instead of copying them in place?)
+  warnings.warn(
+=== TATR 100-ann inference + threshold sweep ===
+Model: /home/meeran/thesis_data/tatr_finetuned_100ann/final
+Images: /home/meeran/thesis_data/dataset_100ann_5class/val/images
+GT: /home/meeran/thesis_data/dataset_100ann_5class/val/labels
+Device: cuda
+Model id2label: {0: 'table', 1: 'table column', 2: 'table row', 3: 'table column header', 4: 'table projected row header', 5: 'table spanning cell'}
+Images found: 26
+[10/26] 38260563___table_3.png: 65 raw boxes above 0.05
+[20/26] b4980366___table_0.png: 94 raw boxes above 0.05
+[26/26] f4e6f3aa___table_0.png: 41 raw boxes above 0.05
+
+==========================================================================================
+TATR 100-ann threshold sweep
+==========================================================================================
+IoU threshold: 0.5
+GT dir: /home/meeran/thesis_data/dataset_100ann_5class/val/labels
+Prediction root: /home/meeran/thesis_data/tatr_finetuned_100ann_predictions
+
+Threshold summary:
+   thr   boxes  overall_P  overall_R overall_F1  supported_P  supported_R supported_F1
+------------------------------------------------------------------------------------------
+  0.05    1440      0.094      0.286      0.142        0.094        0.657        0.165
+  0.10     790      0.161      0.267      0.201        0.161        0.614        0.255
+  0.15     532      0.233      0.261      0.246        0.233        0.599        0.336
+  0.20     399      0.296      0.248      0.270        0.296        0.570        0.389
+  0.25     294      0.384      0.238      0.294        0.384        0.546        0.451
+  0.30     248      0.444      0.232      0.304        0.444        0.531        0.484
+  0.40     187      0.556      0.219      0.314        0.556        0.502        0.528
+  0.50     137      0.664      0.192      0.297        0.664        0.440        0.529
+
+Best supported-class threshold: 0.5
+Best overall threshold: 0.4
+
+==========================================================================================
+BEST SUPPORTED RESULT @ threshold 0.5
+==========================================================================================
+Class counts: {'Row': 43, 'Column': 82, 'Header-Row': 11, 'Spanning-Cell': 1}
+Common images: 26
+Matched pairs: 91
+Average matched IoU: 0.7925
+
+Per-class:
+Class              GT  Pred    TP    FP    FN    Prec     Rec      F1
+--------------------------------------------------------------------------------
+Row               112    43    25    18    87   0.581   0.223   0.323
+Column             75    82    55    27    20   0.671   0.733   0.701
+Cell              268     0     0     0   268   0.000   0.000   0.000
+Header-Row         14    11    11     0     3   1.000   0.786   0.880
+Spanning-Cell       6     1     0     1     6   0.000   0.000   0.000
+--------------------------------------------------------------------------------
+OVERALL           475   137    91    46   384   0.664   0.192   0.297
+SUPPORTED         207   137    91    46   116   0.664   0.440   0.529
+
+==========================================================================================
+BEST OVERALL RESULT @ threshold 0.4
+==========================================================================================
+Class counts: {'Row': 76, 'Column': 98, 'Header-Row': 12, 'Spanning-Cell': 1}
+Common images: 26
+Matched pairs: 104
+Average matched IoU: 0.7748
+
+Per-class:
+Class              GT  Pred    TP    FP    FN    Prec     Rec      F1
+--------------------------------------------------------------------------------
+Row               112    76    33    43    79   0.434   0.295   0.351
+Column             75    98    59    39    16   0.602   0.787   0.682
+Cell              268     0     0     0   268   0.000   0.000   0.000
+Header-Row         14    12    12     0     2   1.000   0.857   0.923
+Spanning-Cell       6     1     0     1     6   0.000   0.000   0.000
+--------------------------------------------------------------------------------
+OVERALL           475   187   104    83   371   0.556   0.219   0.314
+SUPPORTED         207   187   104    83   103   0.556   0.502   0.528
+
+Saved JSON summary: /home/meeran/thesis_data/tatr_finetuned_100ann_predictions/threshold_sweep_metrics.json

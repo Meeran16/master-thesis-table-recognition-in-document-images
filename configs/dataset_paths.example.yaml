@@ -1,0 +1,7 @@
+paths:
+  thesis_data: /home/meeran/thesis_data
+  yolox_repo: /home/meeran/YOLOX
+  dataset_5class: /home/meeran/thesis_data/dataset_100ann_5class
+  dataset_3class: /home/meeran/thesis_data/dataset_100ann_3class
+  dataset_yolox_coco: /home/meeran/thesis_data/dataset_100ann_3class_yolox
+  tatr_dataset: /home/meeran/thesis_data/tatr_finetune_100ann

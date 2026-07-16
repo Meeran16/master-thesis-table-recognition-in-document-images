@@ -1,0 +1,10 @@
+path: /home/meeran/thesis_data/dataset_100ann_5class
+train: train/images
+val: val/images
+
+names:
+  0: Row
+  1: Column
+  2: Cell
+  3: Header-Row
+  4: Spanning-Cell

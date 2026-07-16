@@ -1,0 +1,21 @@
+name: table-recognition-thesis
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - ultralytics
+      - torch
+      - torchvision
+      - transformers
+      - timm
+      - opencv-python
+      - Pillow
+      - numpy
+      - pandas
+      - matplotlib
+      - pycocotools
+      - scikit-learn
+      - tqdm
+      - PyYAML

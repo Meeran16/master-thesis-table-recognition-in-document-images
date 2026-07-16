@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+thesis_env/
+
+# Jupyter/cache
+.ipynb_checkpoints/
+.cache/
+*.log.tmp
+
+# Large model files
+*.pt
+*.pth
+*.safetensors
+*.ckpt
+*.onnx
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# Raw/full datasets and training outputs
+data/raw/
+data/full/
+runs/
+YOLOX_outputs/
+wandb/
+mlruns/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Secrets
+.env
+*.token
+*token*
+*secret*
+*password*

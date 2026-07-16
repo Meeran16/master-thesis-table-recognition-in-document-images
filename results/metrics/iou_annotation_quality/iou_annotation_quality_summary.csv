@@ -1,0 +1,5 @@
+Model,GT boxes,Pred boxes,Class-aware P@0.50,Class-aware R@0.50,Class-aware F1@0.50,Class-aware F1@0.75,Class-agnostic P@0.50,Class-agnostic R@0.50,Class-agnostic F1@0.50,Class-agnostic F1@0.75,Mean matched IoU,Median matched IoU,Mean best IoU per GT,Median best IoU per GT
+YOLOv8 v2,475,601,0.709,0.897,0.792,0.673,0.739,0.935,0.825,0.691,0.862,0.909,0.863,0.906
+YOLOv10 v2,475,477,0.822,0.825,0.824,0.697,0.841,0.844,0.842,0.714,0.866,0.919,0.835,0.886
+TATR v2 @ 0.40,475,187,0.668,0.263,0.378,0.284,0.813,0.320,0.459,0.320,0.809,0.864,0.492,0.448
+Nemotron v2 @ 0.25,475,637,0.658,0.882,0.754,0.705,0.688,0.922,0.788,0.743,0.905,0.932,0.892,0.931
