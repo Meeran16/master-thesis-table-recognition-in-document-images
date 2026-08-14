@@ -1,0 +1,327 @@
+{
+  "example_id": "3e4cd12a___table_0",
+  "source": "yolov8_v2",
+  "image_width": 1322,
+  "image_height": 2062,
+  "note": "Proof-of-concept heuristic. This is not a fully validated logical table reconstruction result.",
+  "class_mapping": {
+    "0": "Row",
+    "1": "Column",
+    "2": "Cell",
+    "3": "Header-Row",
+    "4": "Spanning-Cell"
+  },
+  "row_axes_count": 8,
+  "column_axes_count": 4,
+  "cell_count": 18,
+  "row_axes_source": "detected_boxes",
+  "column_axes_source": "detected_boxes",
+  "logical_cells": [
+    {
+      "cell_id": 1,
+      "detected_class": "Cell",
+      "confidence": 0.9852,
+      "row_start": 1,
+      "row_end": 1,
+      "column_start": 1,
+      "column_end": 2,
+      "rowspan": 1,
+      "colspan": 2,
+      "bbox_xyxy": [
+        12.4,
+        5.1,
+        811.4,
+        683.7
+      ]
+    },
+    {
+      "cell_id": 2,
+      "detected_class": "Cell",
+      "confidence": 0.981,
+      "row_start": 1,
+      "row_end": 1,
+      "column_start": 3,
+      "column_end": 3,
+      "rowspan": 1,
+      "colspan": 1,
+      "bbox_xyxy": [
+        815.0,
+        4.8,
+        1034.6,
+        693.7
+      ]
+    },
+    {
+      "cell_id": 3,
+      "detected_class": "Cell",
+      "confidence": 0.9627,
+      "row_start": 1,
+      "row_end": 2,
+      "column_start": 4,
+      "column_end": 4,
+      "rowspan": 2,
+      "colspan": 1,
+      "bbox_xyxy": [
+        1035.1,
+        7.3,
+        1317.3,
+        955.6
+      ]
+    },
+    {
+      "cell_id": 4,
+      "detected_class": "Cell",
+      "confidence": 0.9772,
+      "row_start": 2,
+      "row_end": 2,
+      "column_start": 1,
+      "column_end": 2,
+      "rowspan": 1,
+      "colspan": 2,
+      "bbox_xyxy": [
+        13.9,
+        683.9,
+        803.6,
+        954.0
+      ]
+    },
+    {
+      "cell_id": 5,
+      "detected_class": "Cell",
+      "confidence": 0.9719,
+      "row_start": 2,
+      "row_end": 2,
+      "column_start": 3,
+      "column_end": 3,
+      "rowspan": 1,
+      "colspan": 1,
+      "bbox_xyxy": [
+        805.6,
+        691.5,
+        1031.6,
+        952.0
+      ]
+    },
+    {
+      "cell_id": 6,
+      "detected_class": "Cell",
+      "confidence": 0.9366,
+      "row_start": 3,
+      "row_end": 3,
+      "column_start": 1,
+      "column_end": 2,
+      "rowspan": 1,
+      "colspan": 2,
+      "bbox_xyxy": [
+        10.7,
+        952.5,
+        805.0,
+        1136.0
+      ]
+    },
+    {
+      "cell_id": 7,
+      "detected_class": "Cell",
+      "confidence": 0.9386,
+      "row_start": 3,
+      "row_end": 3,
+      "column_start": 3,
+      "column_end": 3,
+      "rowspan": 1,
+      "colspan": 1,
+      "bbox_xyxy": [
+        802.8,
+        954.9,
+        1029.4,
+        1136.8
+      ]
+    },
+    {
+      "cell_id": 8,
+      "detected_class": "Cell",
+      "confidence": 0.8575,
+      "row_start": 4,
+      "row_end": 4,
+      "column_start": 1,
+      "column_end": 2,
+      "rowspan": 1,
+      "colspan": 2,
+      "bbox_xyxy": [
+        18.6,
+        1134.9,
+        810.1,
+        1273.9
+      ]
+    },
+    {
+      "cell_id": 9,
+      "detected_class": "Cell",
+      "confidence": 0.9278,
+      "row_start": 4,
+      "row_end": 4,
+      "column_start": 3,
+      "column_end": 3,
+      "rowspan": 1,
+      "colspan": 1,
+      "bbox_xyxy": [
+        801.8,
+        1138.0,
+        1027.6,
+        1271.6
+      ]
+    },
+    {
+      "cell_id": 10,
+      "detected_class": "Cell",
+      "confidence": 0.9734,
+      "row_start": 5,
+      "row_end": 5,
+      "column_start": 3,
+      "column_end": 3,
+      "rowspan": 1,
+      "colspan": 1,
+      "bbox_xyxy": [
+        800.4,
+        1273.2,
+        1024.8,
+        1498.9
+      ]
+    },
+    {
+      "cell_id": 11,
+      "detected_class": "Cell",
+      "confidence": 0.9754,
+      "row_start": 5,
+      "row_end": 5,
+      "column_start": 1,
+      "column_end": 2,
+      "rowspan": 1,
+      "colspan": 2,
+      "bbox_xyxy": [
+        9.8,
+        1271.8,
+        796.1,
+        1501.7
+      ]
+    },
+    {
+      "cell_id": 12,
+      "detected_class": "Cell",
+      "confidence": 0.9566,
+      "row_start": 3,
+      "row_end": 7,
+      "column_start": 4,
+      "column_end": 4,
+      "rowspan": 5,
+      "colspan": 1,
+      "bbox_xyxy": [
+        1029.8,
+        964.6,
+        1316.0,
+        1966.7
+      ]
+    },
+    {
+      "cell_id": 13,
+      "detected_class": "Cell",
+      "confidence": 0.9755,
+      "row_start": 6,
+      "row_end": 6,
+      "column_start": 1,
+      "column_end": 2,
+      "rowspan": 1,
+      "colspan": 2,
+      "bbox_xyxy": [
+        7.3,
+        1501.1,
+        795.3,
+        1728.4
+      ]
+    },
+    {
+      "cell_id": 14,
+      "detected_class": "Cell",
+      "confidence": 0.9411,
+      "row_start": 6,
+      "row_end": 6,
+      "column_start": 3,
+      "column_end": 3,
+      "rowspan": 1,
+      "colspan": 1,
+      "bbox_xyxy": [
+        798.1,
+        1502.8,
+        1022.9,
+        1728.6
+      ]
+    },
+    {
+      "cell_id": 15,
+      "detected_class": "Cell",
+      "confidence": 0.9575,
+      "row_start": 7,
+      "row_end": 7,
+      "column_start": 1,
+      "column_end": 2,
+      "rowspan": 1,
+      "colspan": 2,
+      "bbox_xyxy": [
+        5.6,
+        1725.8,
+        794.2,
+        1952.9
+      ]
+    },
+    {
+      "cell_id": 16,
+      "detected_class": "Cell",
+      "confidence": 0.956,
+      "row_start": 7,
+      "row_end": 7,
+      "column_start": 3,
+      "column_end": 3,
+      "rowspan": 1,
+      "colspan": 1,
+      "bbox_xyxy": [
+        796.5,
+        1728.9,
+        1020.9,
+        1951.9
+      ]
+    },
+    {
+      "cell_id": 17,
+      "detected_class": "Cell",
+      "confidence": 0.6131,
+      "row_start": 8,
+      "row_end": 8,
+      "column_start": 1,
+      "column_end": 2,
+      "rowspan": 1,
+      "colspan": 2,
+      "bbox_xyxy": [
+        6.7,
+        1951.9,
+        808.3,
+        2057.4
+      ]
+    },
+    {
+      "cell_id": 18,
+      "detected_class": "Cell",
+      "confidence": 0.2742,
+      "row_start": 8,
+      "row_end": 8,
+      "column_start": 1,
+      "column_end": 2,
+      "rowspan": 1,
+      "colspan": 2,
+      "bbox_xyxy": [
+        16.3,
+        2041.0,
+        857.4,
+        2062
+      ]
+    }
+  ]
+}
